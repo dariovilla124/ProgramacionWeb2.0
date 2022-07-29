@@ -1,0 +1,26 @@
+body{
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color:rgba(116, 193, 196, 0.651);
+}
+
+div.input1{
+    padding-top: 80px;
+    }
+
+div.input2{
+    padding-top: 15px;
+}
+
+.datos{
+    padding-top: 30px;
+}
+.button{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.field{
+    padding-bottom: 15px;
+}
+

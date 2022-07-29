@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Registro de vehiculos</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <h1>Registro de vehiculos</h1>
+    <div>
+        <h4> ID del vehiculo: <input type="text" placeholder="Id del vehiculo"></h4>
+
+    </div>
+
+    <div class="div1">
+        <fieldset class="fieldset1">
+            <legend> Datos principales del vehiculo</legend>
+            <p>Tipo de vehiculo <select class="select">
+                    <option value="select" selected class="value">Selecciona</option>
+                    <option value="ID" class="value">Vehiculo</option>
+                    <option value="ID" class="value">Todo terreno</option>
+                    <option value="ID" class="value">Camionetas</option>
+                    <option value="ID" class="value">Deportivos</option>
+                    <option value="ID" class="value">Camiones</option>
+                </select> </p>
+
+            <p>Tipo de combustible <select class="select">
+                    <option value="select" selected class="value">Selecciona</option>
+                    <option value="ID" class="value">Gasolina</option>
+                    <option value="ID" class="value">Electrico</option>
+                    <option value="ID" class="value">Hibrido</option>
+                </select> </p>
+
+            <p>Estado del vehiculo <select class="select">
+                    <option value="select" selected class="value">Selecciona</option>
+                    <option value="ID" class="value">Nuevo</option>
+                    <option value="ID" class="value">Usado</option>
+                </select> </p>
+
+            <p>Marca del vehiculo<select class="select">
+                    <option value="select" selected class="value">Selecciona</option>
+                    <option value="ID" class="value">Renault</option>
+                    <option value="ID" class="value">Audi</option>
+                    <option value="ID" class="value">Chevrolet</option>
+                    <option value="ID" class="value">Mazda</option>
+                    <option value="ID" class="value">Tesla</option>
+                    <option value="ID" class="value">Hyundai</option>
+                </select> </p>
+            <div>
+                <p>ID de usuario </p>
+                <input type="radio" value="HTML">
+                <label for="html">2122</label>
+                <input type="radio" value="HTML">
+                <label for="html">2123</label>
+                <input type="radio" value="HTML">
+                <label for="html">2124</label>
+                <input type="radio" value="HTML">
+                <label for="html">2125</label>
+                <input type="radio" value="HTML">
+                <label for="html">2126</label>
+                <input type="radio" value="HTML">
+                <label for="html">2130</label>
+                <input type="radio" value="HTML">
+                <label for="html">2131</label>
+                <input type="radio" value="HTML">
+                <label for="html">2132</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="div1">
+    <fieldset>
+        <legend>Datos secundarios del vehiculo</legend>
+        <div>
+            <p>Modelo del vehiculo <input type="text" placeholder="Modelo"> Anio de fabricacion<input type="text"
+                    placeholder="Anio de fab"></p>
+            <p>Tipo de transmision </p>
+            <div>
+                <input type="radio" value="HTML">
+                <label for="html">Automatica</label>
+            </div>
+            <div>
+                <input type="radio" value="HTML">
+                <label for="html">Mecanica</label>
+            </div>
+        </div>
+        <p>Cilindraje del vehiculo <input type="text" placeholder="Cilindraje en cc"> cc</p>
+    </fieldset>
+</div>
+<div class="div1">
+    <fieldset>
+        <legend>Datos de venta</legend>
+        <p> Precio <input type="text" placeholder="Precio del vehiculo">
+            <select class="select">
+                <option value="ID" selected>Selecciona</option>
+                <option value="">US$</option>
+                <option value="">EU€</option>
+                <option value="">COP$</option>
+            </select>
+        </p>
+
+        <p>Fecha de publicacion</p>
+        <input type="date" class="date">
+
+        <p>Detalles del vehiculo</p>
+        <textarea class="text-tarea" placeholder="Detalles" cols="25"></textarea>
+
+    </fieldset>
+</div>
+</body>
+
+</html>

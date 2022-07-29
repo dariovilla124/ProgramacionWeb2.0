@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registro de vehiculos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="Carsbulma.css">
+</head>
+
+<body>
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <div class="field4">
+                <h1 class="title is-1 has-text-primary is-spaced">REGISTRO DE VEHICULOS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="field3">
+        <div class="field has-addons">
+            <div class="control">
+                <a class="button is-static is-primary">Serial del vehiculo</a>
+            </div>
+            <div class="control ">
+                <input type="text" class="input is-primary" placeholder="ID del vehiculo" maxlength="11">
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <div class="columns">
+        <div class="column">
+            <h2 class="title has-text-centered is-4 is-spaced has-text-info"> Datos primarios del vehiculo</h2>
+            <div class="field1">
+                <div class="field has-addons">
+                    <div class="field">
+                        <p class="heading">Codigo del Pais</p>
+                        <div class="select is-rounded is-primary">
+                            <select name="select">
+                                <option value="select" selected>Selecciona</option>
+                                <option value="ID">2122</option>
+                                <option value="ID">2123</option>
+                                <option value="ID">2124</option>
+                                <option value="ID">2125</option>
+                                <option value="ID">2126</option>
+                                <option value="ID">2130</option>
+                                <option value="ID">2131</option>
+                                <option value="ID">2132</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="heading">Tipo de combustible</p>
+                        <div class="select is-rounded is-primary">
+                            <select name="select">
+                                <option value="select" selected>Selecciona-</option>
+                                <option value="ID">Gasolina</option>
+                                <option value="ID">Electrico</option>
+                                <option value="ID">Hibrido</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="heading">Tipo de vehiculo</p>
+                <div class="select is-rounded is-primary">
+                    <select name="select">
+                        <option value="select" selected>Selecciona</option>
+                        <option value="ID">Vehiculo</option>
+                        <option value="ID">Todo terreno</option>
+                        <option value="ID">Camionetas</option>
+                        <option value="ID">Deportivos</option>
+                        <option value="ID">Camiones</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h2 class="title has-text-centered is-4 is-spaced has-text-info"> Datos secundarios del vehiculo</h2>
+            <div class="field2">
+                <div class="field has-addons">
+                    <div class="field">
+                        <p class="heading">Estado del vehiculo</p>
+                        <div class="select is-rounded is-primary">
+                            <select name="select">
+                                <option value="select" selected>Selecciona</option>
+                                <option value="ID">Nuevo</option>
+                                <option value="ID">Usado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <p class="heading">Marca del vehiculo</p>
+                        <div class="select is-rounded is-primary">
+                            <select name="select">
+                                <option value="select" selected>Selecciona</option>
+                                <option value="ID">Renault</option>
+                                <option value="ID">Audi</option>
+                                <option value="ID">Chevrolet</option>
+                                <option value="ID">Mazda</option>
+                                <option value="ID">Tesla</option>
+                                <option value="ID">Hyundai</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="heading">Codigo de usuario</p>
+                <div class="select is-rounded is-primary">
+                    <select name="select">
+                        <option value="select" selected>Selecciona</option>
+                        <option value="ID">1234</option>
+                        <option value="ID">1478</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+        <div class="column is-one-third">
+            <div class="field">
+                <label class="heading">Modelo</label>
+                <div class="control">
+                    <input type="text" class="input is-primary is-medium" name="Modelo" maxlength="20"
+                        placeholder="Modelo del vehiculo" />
+                </div>
+            </div>
+            <div class="field has-addons">
+                <div class="control">
+                    <p class="heading">Año de fabricacion</p>
+                    <input type="text" class="input is-primary is-small" name="Año" size="1" maxlength="4"
+                        placeholder="Anio de fabricacion" />
+                </div>
+            </div>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="answer"></input>
+                    Transmision Automatica
+                </label>
+                <label class="radio">
+                    <input type="radio" name="answer"></input>
+                    Transmision Mecanica
+                </label>
+            </div>
+            <br></br>
+            <div class="field has-addons">
+                <div class="control">
+                    <p class="heading"> Cilindraje del vehiculo</p>
+                    <div class="field has-addons">
+                        <input type="text" class="input is-primary is-small" name="Motor" size="1" maxlength="8"
+                            placeholder="Cilindraje del vehiculo" />
+                        <div class="control">
+                            <a class="button is-static is-primary is-small">cc</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <p class="heading">Precio </p>
+                    <div class="field has-addons">
+                        <div class="select is-rounded is-primary">
+                            <select name="select">
+                                <option value="" class="value"> US$</option>
+                                <option value="" class="value">EU€</option>
+                                <option value="" class="value">COP$</option>
+                                <option value="select" selected>Selecciona</option>
+                            </select>
+                        </div>
+                        <input type="text" class="input is-primary is-rounded" name="precio"
+                            placeholder="Precio del vehiculo" />
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <div class="field">
+                <h2 class="title has-text-centered is-4 is-spaced has-text-info">Detalles del vehiculo</h2>
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea is-small is-primary" placeholder="Detalles del vehiculo" cols="50"
+                            rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="field has-addons">
+                <p class="heading">Fecha de publicacion:</p>
+                <input type="date" name="Fe pu" />
+            </div>
+            <br></br>
+            <div class="buttons is-centered">
+                <button class="button is-primary is-medium"> Registrar!</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

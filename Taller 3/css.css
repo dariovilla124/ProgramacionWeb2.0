@@ -1,0 +1,26 @@
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  h1{
+    padding-left: 300px;
+    padding-bottom: 50px;
+
+  }
+
+  div.div1{
+    padding-bottom: 50px;
+  }
