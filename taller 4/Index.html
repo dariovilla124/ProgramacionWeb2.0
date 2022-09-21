@@ -1,52 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css.css">
-    <script src="https://kit.fontawesome.com/e21011aaba.js" crossorigin="anonymous"></script>
-    <title>Formulario Registro</title>
+    <title>Taller 5 Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <form class="form-register">
-        <h4>Formulario Registro</h4>
-        <div class="nombre">
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-            <span class="fas fa-user-group"></span>
-        </div>
-        <div class="apellido">
-            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-            <span class="fas fa-user-group"></span>
-        </div>
-        <div class="direccion">
-            <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirección">
-            <span class="fas fa-signs-post"></span>
-        </div>
-        <div class="email">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-            <span class="fas fa-envelope"></span>
-        </div>
-        <div class="contraseña">
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
-            <span class="fas fa-lock"></span>
-        </div>
-        <div class="contraseña">
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirme su Contraseña">
-            <span class="fas fa-lock"></span>
-        </div>
-        <div class=" telefono">
-            <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
-            <span class="fas fa-phone-flip"></span>
-        </div>
+    <div class="contenedor">
+        <main>
+            <div class="titulo">
+                <h1>Registro</h1>
+            </div>
 
-        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-        <input class="botons" type="submit" value="Registrar">
-        <p><a href="#">¿Ya tengo Cuenta?</a></p>
-    </form>
+            <form action="" class="formulario" method="post" id="formulario">
+                <!-- Grupo: Pais -->
+                <div class="formulario__grupo" id="grupo__pais">
+                    <label for="pais" class="formulario__label">Seleccione su país de origen </label>
+                    <select name="paises" class="">
+                        <option id="pais1">Alemania</option>
+                        <option id="pais2">Canadá</option>
+                        <option id="pais3">Colombia</option>
+                        <option id="pais4">Dinamarca</option>
+                        <option id="pais5">Ecuador</option>
+                        <option id="pais6">Estados Unidos</option>
+                        <option id="pais7">Francia</option>
+                        <option id="pais8">Inglaterra</option>
+                        <option id="pais9">Italia</option>
+                        <option id="pais10">México</option>
+                        <option id="pais11">Panamá</option>
+                        <option id="pais12">Paraguay</option>
+                        <option id="pais13">Venezuela</option>
+                    </select>
+                </div>
 
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombres</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres
+                    </p>
+                </div>
+
+                <!-- Grupo: Apellido -->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellidos</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres
+                    </p>
+                </div>
+
+
+                <!-- Grupo: Direccion -->
+                <div class="formulario__grupo" id="grupo__direccion">
+                    <label for="direccion" class="formulario__label">Dirección</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="direccion" id="direccion"
+                            placeholder="cll 24 #31-40">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El campo dirección debe empezar por las
+                        siguientes palabras.
+                        cll, cra, av, anv, trans</p>
+                </div>
+
+
+                <!-- Grupo: Usuario -->
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Este campo debe estar lleno y debe
+                        tener máximo 20 y mínimo
+                        10 caracteres. No debe contener
+                        caracteres extraños.</p>
+                </div>
+
+
+                <!-- Grupo: Password -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Password</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Este campo debe estar lleno y debe
+                        tener máximo 20 y mínimo
+                        15 caracteres. debe contener
+                        mayúsculas , numeros, letras y/o los
+                        siguientes caracteres [#,%,/,&] </p>
+                </div>
+
+
+                <!-- Grupo: Password2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Password</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Las password deben ser iguales </p>
+                </div>
+
+
+                <!-- Grupo: Correo -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Email</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
+                </div>
+
+
+                <!-- Grupo: Codigotel -->
+                <div class="formulario__grupo" id="grupo__cod">
+                    <label for="" class="formulario__label">Codigo de pais</label>
+                    <select name="codigopais">
+                        <option>+57</option>
+                        <option>+31</option>
+                        <option>+2</option>
+                        <option>+58</option>
+                        <option>+16</option>
+                        <option>+7</option>
+                        <option>+37</option>
+                    </select>
+                </div>
+
+
+                <!-- Grupo: Telefono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Telefono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros</p>
+                </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+                <div class="formulario__grupo">
+                    <p class="auto-style3"><input name="pago1" checked="checked" class="pago" type="radio"
+                        style="width:20px; height: auto" value="Ventanilla" />&nbsp;<span class="auto-style4">  No marcar gustos</span></p>
+                    <p class="auto-style3"><input class="pago" name="pago1" type="radio" style="width: 20px; height: auto"
+                            value="Deposito" /><span class="auto-style4"> Marcar gustos</span>
+                    </p>
+                <p>&nbsp;</p>
+                
+                </div>
+
+                <div id="div1" style="display:none;">
+                    <!-- Grupo: Preferencias modelo -->
+                <div class="formulario__grupo" id="grupo__modelo">
+                    <label for="modelo" class="formulario__label">Ingrese su modelo favorito</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="modelo" id="modelo">
+                        <i class="formulario__validacion-estado far fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Es necesario que complete el espacio</p>
+                </div>
+                <br>
+                <!-- Grupo: Color auto -->
+                <div class="formulario__grupo" id="grupo__color">
+                    <label for="colorfav"><strong>Color Favorito</strong></label><br><br>
+                    <input type="radio" id="azul" name="color" value="1">Azul
+                    <input type="radio" id="rojo" name="color" value="2">Rojo
+                    <input type="radio" id="verde" name="color" value="3">Verde
+                </div>
+
+                <br>
+                <!-- Grupo: Marca auto -->
+                <div class="formulario__grupo" id="grupo__marca">
+                    <label for="marcafav"><strong>Marca Favorita</strong></label><br><br>
+                    <input type="radio" id="Mercedes-Benz" name="marca" value="1">Mercedes-Benz
+                    <input type="radio" id="BMW" name="marca" value="2">BMW
+                    <input type="radio" id="Ford" name="marca" value="3">Ford
+                </div>
+
+                <br>
+                <!-- Grupo: Estilo auto -->
+                <div class="formulario__grupo" id="grupo__estilo">
+                    <label for="estilofav"><strong>Estilo Favorito</strong></label><br><br>
+                    <input type="radio" id="Familiar" name="estilo" value="1">Familiar
+                    <input type="radio" id="Deportivo" name="estilo" value="2">Deportivo
+                    <input type="radio" id="Todoterreno" name="estilo" value="3">Todoterreno
+                </div>
+
+                <br>
+
+                <!-- Grupo: Double slider range -->
+                <div class="formulario__grupo">
+                    <label for="estilofav"><strong> Seleccione el maximo y minimo que estaría dispuesto a gastar en
+                            un vehículo</strong></label>
+                    <div slider id="slider-distance">
+                        <div>
+                            <div inverse-left style="width:70%;"></div>
+                            <div inverse-right style="width:70%;"></div>
+                            <div range style="left:0%;right:0%;"></div>
+                            <span thumb style="left:0%;"></span>
+                            <span thumb style="left:100%;"></span>
+                            <div sign style="left:0%;">
+                                <span id="value">Min</span>
+                            </div>
+                            <div sign style="left:100%;">
+                                <span id="value">Max</span>
+                            </div>
+                        </div>
+                        <input type="range" value="0" max="1000000" min="0" step="1" oninput="
+                    this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                    let value = (this.value/parseInt(this.max))*100
+                    var children = this.parentNode.childNodes[1].childNodes;
+                    children[1].style.width=value+'%';
+                    children[5].style.left=value+'%';
+                    children[7].style.left=value+'%';children[11].style.left=value+'%';
+                    children[11].childNodes[1].innerHTML=this.value;" />
+
+                        <input type="range" value="1000000" max="1000000" min="0" step="1" oninput="
+                    this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                    let value = (this.value/parseInt(this.max))*100
+                    var children = this.parentNode.childNodes[1].childNodes;
+                    children[3].style.width=(100-value)+'%';
+                    children[5].style.right=(100-value)+'%';
+                    children[9].style.left=value+'%';children[13].style.left=value+'%';
+                    children[13].childNodes[1].innerHTML=this.value;" />
+                    </div>
+
+                </div>
+                </div>
+                
+                <!-- Grupo: Terminos -->
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los terminos y condiciones</label>
+                </div>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i><b>ERROR:</b>Por favor completa el formulario
+                        correctamente</p>
+                </div>
+                <!-- Grupo: Boton -->
+                <div class="formulario__grupo formulario__grupo-btn-registrar">
+                    <button type="submit" class="formulario__btn">Registrar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario registrado
+                        exitosamente!</p>
+                </div>
+            </form>
+        </main>
+
+
+        
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
