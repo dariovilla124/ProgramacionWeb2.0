@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 400px;
+    }
+
+    .grid-container2{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 5px;
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 400px;
+    }
+
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .item1{
+    grid-column: 1/ span 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="grid-container2">
+<a class ="item1">Porcentaje de uso de los lenguajes de programación</a>
+</div>
+<div class = "grid-container">
+<b class ="grid-item">Lenguaje</b>
+<b class ="grid-item">Porcentaje</b>
+<a class ="grid-item">Phyton</a>
+<a class ="grid-item">25.95%</a>
+<a class ="grid-item">Java</a>
+<a class ="grid-item">21.42%</a>
+<a class ="grid-item">Java Script</a>
+<a class ="grid-item">8.26%</a>
+<a class ="grid-item">C#</a>
+<a class ="grid-item">7.62%</a>
+</div>
+<br></br>
+<input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+</body>
+</html>
