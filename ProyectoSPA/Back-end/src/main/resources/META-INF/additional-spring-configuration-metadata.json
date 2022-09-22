@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.jpa.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.dialect'"
+  },
+  {
+    "name": "spring.datasource.show.sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.show.sql'"
+  }
+]}
