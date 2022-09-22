@@ -1,0 +1,38 @@
+
+<header id="main-header">
+		
+  <a id="logo-header" href="#">
+    <span class="site-name">RestBOOK</span>
+    <span class="site-desc">Diseño web / Angular / js / HTML / CSS</span>
+  </a> 
+
+  <nav>
+    <ul>
+      <button (click)="Listar()" class="btn btn-info" style="margin-top: 20px; margin-right: 10px;">
+        Restaurantes
+      </button>
+      <button (click)="Nuevo()" class="btn btn-info" style="margin-top: 20px;">
+        Registrar 
+      </button>
+
+    </ul>
+  </nav>
+
+</header>
+
+<section id="main-content">
+    <div style="text-align:center">
+      <br>
+      <h1>
+        CRUD
+      </h1>
+    </div>
+
+    <router-outlet></router-outlet>
+    <br>
+    <br>
+</section>
+
+<footer id="main-footer">
+  <p>&copy; 2022 <a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></p>
+</footer> <!-- / #main-footer -->

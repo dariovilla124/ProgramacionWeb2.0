@@ -1,0 +1,33 @@
+<div class="container col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Agregar</h3>
+        <div class="clas-body">
+          <form action="">
+            <div class="form-group">
+                <label for="">Id:{{restaurante.id}}</label>
+                
+            </div>  
+            <div class="form-group">
+              <label for="">Nombre:</label>
+              <input [(ngModel)]="restaurante.nombre" name="nombre" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Contacto:</label>
+              <input [(ngModel)]="restaurante.contacto" name="contac" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Direccion:</label>
+              <input [(ngModel)]="restaurante.direccion" name="dir" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Tematica:</label>
+                <input [(ngModel)]="restaurante.tematica" name="tem" type="text" class="form-control">
+              </div>
+            <button (click)= 'Guardar()' class="btn btn-danger">Guardar</button>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
