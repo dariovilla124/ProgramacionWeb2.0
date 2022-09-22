@@ -1,0 +1,19 @@
+@charset "UTF-8";
+ * {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+    height: auto;
+  }
+
+.container2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.jumbotron{
+    height: auto;
+    
+}
